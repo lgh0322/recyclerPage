@@ -38,7 +38,7 @@ class RvAdapter(context: Context, private val itemCountPerRowOrColumn: Int) :
     }
 
     override fun getItemCount(): Int {
-        return 24
+        return 200
     }
 
     class RvHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

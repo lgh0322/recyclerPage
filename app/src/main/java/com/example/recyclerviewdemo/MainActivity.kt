@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rv = findViewById<RecyclerView>(R.id.rv)
-        val adapter = RvAdapter(this, 3)
-        PagerSnapHelper(6).attachToRecyclerView(rv)
+        val adapter = RvAdapter(this, 5)
+        PagerSnapHelper(1).attachToRecyclerView(rv)
         rv.run {
-            layoutManager = GridLayoutManager(this@MainActivity, 2, RecyclerView.HORIZONTAL, false)
+            layoutManager = GridLayoutManager(this@MainActivity, 1, RecyclerView.HORIZONTAL, false)
             this.adapter = adapter
             addItemDecoration(GridItemDecoration(this@MainActivity))
         }
